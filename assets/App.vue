@@ -2,7 +2,7 @@
   <div id="app" class="container">
     <div class="row mt-5" v-if="arrBid.length > 0">
       <div class="col">
-        <h2>Price</h2>
+<!--        <h2>Price</h2>-->
         <LineChart :chartData="arrBid" :options="chartOptions" label="Price"></LineChart>
       </div>
     </div>
@@ -12,7 +12,7 @@
 <script>
 import axios from 'axios';
 import moment from 'moment';
-import LineChart from "./components/LineChart";
+import LineChart from "./components/StockChart";
 
 export default {
   name: 'App',
